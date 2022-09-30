@@ -19,7 +19,6 @@ body {
 }
 
 .search-tab {
-    outline: 2px solid red;
     display: flex;
     flex-wrap: wrap;
     padding: 24px 65px 90px 65px;
