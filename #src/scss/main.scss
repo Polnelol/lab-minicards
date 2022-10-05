@@ -1,11 +1,5 @@
-@font-face {
-	font-family: 'PTRootUIWebVF';
-	src:
-		url('../fonts/PT-Root-UI_VF.woff2') format('woff2'),
-		url('../fonts/PT-Root-UI_VF.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
+@import "base/_normalize";
+@import "base/_typography";
 
 body {
     font-family: 'PTRootUIWebVF';
