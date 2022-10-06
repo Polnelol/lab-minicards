@@ -5,20 +5,21 @@
     font-style: normal;
 }
 
-@mixin font_pt-root-vf ($font-size, $letter-spacing: normal, $line-height: normal) {
+// @mixin font_pt-root-vf ($font-size, $font-weight: null, $line-height, $letter-spacing: null) {
 
-    font-size: $font-size * 1px;
+//     font-size: $font-size * 1px;
 
-    @if $line-height == normal {
-        line-height: normal;
-    } @else {
-        line-height: $line-height;
-    }
+//     @if $font-weight != 'fw' {
+//         font-weight: $font-weight;
+//     }
 
-    @if $letter-spacing == null {
-        letter-spacing: normal;
-    } 
-    @else {
-        letter-spacing: $letter-spacing * 1em;
-    }
-}
+//     @if $line-height {
+//         line-height: $line-height * 1px;
+//     }
+
+//     @if $letter-spacing {
+//         letter-spacing: $letter-spacing * 1em;
+//     }
+// }
+
+
