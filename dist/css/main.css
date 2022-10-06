@@ -397,6 +397,9 @@ body {
   border: none;
   padding: 0;
   cursor: pointer;
+  font-size: 23px;
+  line-height: normal;
+  letter-spacing: 0.0004em;
 }
 
 .search-tab {
