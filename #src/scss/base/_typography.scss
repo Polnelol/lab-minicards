@@ -5,6 +5,8 @@
     font-style: normal;
 }
 
+// @include font_pt-root-vf(21,fw,lh,0.02);
+
 @mixin font_pt-root-vf ($font-size: fs, $font-weight: fw, $line-height: lh, $letter-spacing: ls) {
 
     @if $font-size != 'fs' {
