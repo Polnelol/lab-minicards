@@ -5,21 +5,23 @@
     font-style: normal;
 }
 
-// @mixin font_pt-root-vf ($font-size, $font-weight: null, $line-height, $letter-spacing: null) {
+@mixin font_pt-root-vf ($font-size: fs, $font-weight: fw, $line-height: lh, $letter-spacing: ls) {
 
-//     font-size: $font-size * 1px;
+    @if $font-size != 'fs' {
+        font-size: $font-size * 1px;
+    }
 
-//     @if $font-weight != 'fw' {
-//         font-weight: $font-weight;
-//     }
+    @if $font-weight != 'fw' {
+        font-weight: $font-weight;
+    }
 
-//     @if $line-height {
-//         line-height: $line-height * 1px;
-//     }
+    @if $line-height != 'lh'{
+        line-height: $line-height * 1px;
+    }
 
-//     @if $letter-spacing {
-//         letter-spacing: $letter-spacing * 1em;
-//     }
-// }
+    @if $letter-spacing != 'ls'{
+        letter-spacing: $letter-spacing * 1em;
+    }
+}
 
 

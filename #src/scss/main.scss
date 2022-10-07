@@ -10,7 +10,7 @@ body {
     border: none;
     padding: 0;
     cursor: pointer;
-    // @include font_pt-root-vf(18, 19);
+    @include font_pt-root-vf(21,fw,lh,0.02);
 }
 
 .search-tab {
