@@ -489,13 +489,13 @@ Extension mixins (миксины с расширением классов) END
   margin-bottom: 8px;
   border: 1px solid #CCCCCC;
   border-radius: 2px;
-  color: #444444;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 22px;
-  letter-spacing: 0.024em;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 560;
+  letter-spacing: 0.024em;
+  color: #444444;
 }
 
 .product-card__label:hover {
