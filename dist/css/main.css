@@ -409,14 +409,24 @@ fc - color - цвет текста */
 
 /* Extension mixins (миксины с расширением классов) End */
 
+/* =============================================================
+Стили кнопок для технического класса, обнуление/добавление START 
+================================================================ */
+
 ._btn {
   background: none;
-  border: none;
+  outline: none;
   padding: 0;
   cursor: pointer;
 }
 
-/* Кнопка мини товарной карточки "В корзину" START */
+/* ==================================================
+Стили кнопок для тех класса, обнуление/добавление END
+===================================================== */
+
+/* ============================================
+Кнопка мини товарной карточки "В корзину" START 
+=============================================== */
 
 .btn-tocart {
   padding: 12px 20px;
@@ -430,13 +440,38 @@ fc - color - цвет текста */
   color: #595959;
 }
 
+/* состояние active - Товар добавлен в корзину */
+
 .btn-tocart.active {
   background: #0650C2;
   color: #FFFFFF;
   border: none;
 }
 
-/* Кнопка мини товарной карточки "В корзину" END */
+/* ==========================================
+Кнопка мини товарной карточки "В корзину" END 
+============================================= */
+
+/* ===============================
+Кнопка отложенных (сердечко) START 
+================================== */
+
+.btn-like {
+  border: none;
+  width: 27px;
+  height: 24px;
+  background: url("../img/like-default.svg") no-repeat center;
+}
+
+.btn-like.active {
+  width: 27px;
+  height: 24px;
+  background: url("../img/like-active.svg") no-repeat center;
+}
+
+/* =============================
+Кнопка отложенных (сердечко) END 
+================================ */
 
 /* Компонент "Tooltip" (всплывающая подсказка при наведении) START */
 
@@ -693,18 +728,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-right: 8px;
-}
-
-.btn-like {
-  width: 27px;
-  height: 24px;
-  background: url("../img/like-default.svg") no-repeat center;
-}
-
-.btn-like.active {
-  width: 27px;
-  height: 24px;
-  background: url("../img/like-active.svg") no-repeat center;
 }
 
 .product-card__about-container {
