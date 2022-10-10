@@ -5,20 +5,22 @@
     font-style: normal;
 }
 
-/* Extension mixins (миксины с расширением классов) START*/
 
-/* Миксин шрифта START */
+/* ===================================================
+Extension mixins (миксины с расширением классов) START 
+====================================================== */
 
-@mixin _font-ext ($font-name: null, $font-size: null, $font-weight: null, $line-height: null, $letter-spacing: null, $font-color: null) {
+/* ================ Миксин шрифта START =================== */
+@mixin _font-ext ($font-name: null, $font-size: null, $line-height: null, $font-weight: null, $letter-spacing: null, $font-color: null) {
 
-    @if $font-name != 'fn' {font-family: $font-name;}
+    @if $font-name != 'fn'{font-family: $font-name;}
 
-    @if $font-size != 'fs' {font-size: $font-size * 1px;}
-
-    @if $font-weight != 'fw' {font-weight: $font-weight;}
+    @if $font-size != 'fs'{font-size: $font-size * 1px;}
 
     @if $line-height != 'lh'{line-height: $line-height * 1px;}
 
+    @if $font-weight != 'fw' {font-weight: $font-weight;}
+    
     @if $letter-spacing != 'ls'{letter-spacing: $letter-spacing * 1em;}
 
     @if $font-color != 'fc'{color: $font-color;}
@@ -26,19 +28,20 @@
 
 /* Подключение
 
-@include _font-ext(fn, fs, fw, lh, ls, fc);
+@include _font-ext(fn, fs, lh, fw, ls, fc);
 
 ! Без единиц измерения
 
 fn - font-family (font-name) - название шрифта
-fs - font-size   - размер шрифта
-fw - font-weight - начертание шрифта
-lh - line-height - межстрочный отступ
-ls - letter-spacing - межбуквенный отступ
-fc - color - цвет текста */
+fs - font-size               - размер шрифта
+lh - line-height             - межстрочный отступ
+fw - font-weight             - начертание шрифта
+ls - letter-spacing          - межбуквенный отступ
+fc - color                   - цвет текста */
+/* ============== Миксин шрифта END ================= */
 
-/* Миксин шрифта END */
-
-/* Extension mixins (миксины с расширением классов) End */
+/* =================================================
+Extension mixins (миксины с расширением классов) END 
+==================================================== */
 
 

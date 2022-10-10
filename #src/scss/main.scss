@@ -56,7 +56,7 @@ body {
     cursor: pointer;
     transition: .3s;
 
-    @include _font-ext(fn, 17, 700, 29, 0.02, #FFFFFF);
+    @include _font-ext(fn, 17, 29, 700, .02, #FFFFFF);
 }
 
 .product-card__discount:hover {
@@ -70,21 +70,16 @@ body {
 
 .product-card__current-price {
     margin-right: 5px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.02em;
-    color: #111111;
+
+    @include _font-ext(fn, 24, 28, 700, .02, #111111);
 }
 
 .product-card__old-price-val {
     position: relative;
     margin-right: 5px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    color: #595959;
     cursor: pointer;
+
+    @include _font-ext(fn, 20, 27, 400, ls, #595959);
 }
 
 .product-card__old-price-val::after {
@@ -95,59 +90,41 @@ body {
     width: 100%;
     height: 1px;
     background-color: #EC0002;
-    transform: matrix(0.93, -0.32, 0.37, 0.94, 0, 0);
+    transform: matrix(0.93, -0.32, 0.37, .94, 0, 0);
     opacity: 0.75;
 }
 
 .product-card__sale-time {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 17px;
-    letter-spacing: 0.01em;
-    color: #6A49E2;
+    @include _font-ext(fn, 15, 17, 560, .01, #6A49E2);
 }
 
 .product-card__out-of-stock {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.02em;
-    color: #595959;
+    @include _font-ext(fn, 24, 28, 700, .02, #595959);
 }
 
 .product-card__subinfo {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 16px;
     align-items: center;
-    letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: #CA2166;
+
+    @include _font-ext(fn, 11, 16, 560, .094, #CA2166);
 }
 
 .product-card__name {
     margin: 8px 0;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 20px;
-    letter-spacing: 0.005em;
+
+    @include _font-ext(fn, 17, 20, 560, .005, fc);
 }
 
 .product-card__author {
     margin: 8px 0;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 0.005em;
+
+    @include _font-ext(fn, 15, 20, 440, .005, fc);
 }
 
 .product-card__info {
     margin: 8px 0;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 0.005em;
-    color: #595959;
+
+    @include _font-ext(fn, 15, 20, 440, .005, #595959);
 }
 
 .product-card__rating-container {
@@ -161,11 +138,8 @@ body {
 
 .product-card__rating-value {
     margin-right: 4px;
-    font-weight: 560;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 0.005em;
-    color: #111111;
+
+    @include _font-ext(fn, 15, 20, 560, .005, #111111);
 }
 
 .product-card__rating-img {
@@ -173,10 +147,7 @@ body {
 }
 
 .product-card__rating-reviews {
-    font-weight: 440;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 0.005em;
+    @include _font-ext(fn, 15, 20, 440, .005, fc);
 }
 
 .product-card__controls-contaier {
@@ -200,22 +171,15 @@ body {
 }
 
 .label-lpost__title {
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 22px;
-    letter-spacing: 0.024em;
-    color: #666666;
+    @include _font-ext(fn, 17, 22, 560, .024, #666666);
 }
 
 .label-purchase {
     display: inline-block;
     padding: 0 4px;
     background: #E8E8E8;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 22px;
-    letter-spacing: 0.024em;
-    color: #666666;
+    
+    @include _font-ext(fn, 17, 22, 560, .024, #666666);
 }
 
 @media (max-width: 1600px) {
