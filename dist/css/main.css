@@ -409,10 +409,6 @@ fc - color - цвет текста */
 
 /* Extension mixins (миксины с расширением классов) End */
 
-body {
-  font-family: "root-ui_vf";
-}
-
 ._btn {
   background: none;
   border: none;
@@ -420,22 +416,27 @@ body {
   cursor: pointer;
 }
 
-.search-tab {
+/* Кнопка мини товарной карточки "В корзину" START */
+
+.btn-tocart {
+  padding: 12px 20px;
+  border: 1px solid #C9C9C9;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 20px;
   display: flex;
-  flex-wrap: wrap;
-  padding: 24px 65px 90px 65px;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #595959;
 }
 
-.prodcut-card {
-  width: 16.666666%;
-  padding: 0 20px 24px;
-  margin-bottom: 24px;
-  box-sizing: border-box;
+.btn-tocart.active {
+  background: #0650C2;
+  color: #FFFFFF;
+  border: none;
 }
 
-/* .prodcut-card:hover {
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
-} */
+/* Кнопка мини товарной карточки "В корзину" END */
 
 /* Компонент "Tooltip" (всплывающая подсказка при наведении) START */
 
@@ -475,6 +476,23 @@ body {
 }
 
 /* Компонент "Tooltip" (всплывающая подсказка при наведении) END */
+
+body {
+  font-family: "root-ui_vf";
+}
+
+.search-tab {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 65px 90px 65px;
+}
+
+.prodcut-card {
+  width: 16.666666%;
+  padding: 0 20px 24px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
 
 /* Компонент "Верхний лейбл" (скидка, акция, доставка) START */
 
@@ -675,24 +693,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-right: 8px;
-}
-
-.btn-tocart {
-  padding: 12px 20px;
-  border: 1px solid #C9C9C9;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.02em;
-  color: #595959;
-}
-
-.btn-tocart.active {
-  background: #0650C2;
-  color: #FFFFFF;
-  border: none;
 }
 
 .btn-like {

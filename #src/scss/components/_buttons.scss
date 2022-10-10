@@ -1,0 +1,28 @@
+// Сброс дефолтных стилей
+._btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+ 
+/* Кнопка мини товарной карточки "В корзину" START */
+.btn-tocart {
+    padding: 12px 20px;
+    border: 1px solid #C9C9C9;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #595959;
+}
+
+// состояние active - Товар добавлен в корзину
+.btn-tocart.active {
+    background: #0650C2;
+    color: #FFFFFF;
+    border: none;
+}
+/* Кнопка мини товарной карточки "В корзину" END */
