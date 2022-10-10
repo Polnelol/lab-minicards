@@ -382,14 +382,35 @@ template {
 }
 
 @font-face {
-  font-family: "PTRootUIWebVF";
+  font-family: "root-ui_vf";
   src: url("../fonts/PT-Root-UI_VF.woff2") format("woff2-variations"), url("../fonts/PT-Root-UI_VF.woff") format("woff-variations");
   font-weight: 400 700;
   font-style: normal;
 }
 
+/* Extension mixins (миксины с расширением классов) START*/
+
+/* Миксин шрифта START */
+
+/* Подключение
+
+@include _font-ext(fn, fs, fw, lh, ls, fc);
+
+! Без единиц измерения
+
+fn - font-family (font-name) - название шрифта
+fs - font-size   - размер шрифта
+fw - font-weight - начертание шрифта
+lh - line-height - межстрочный отступ
+ls - letter-spacing - межбуквенный отступ
+fc - color - цвет текста */
+
+/* Миксин шрифта END */
+
+/* Extension mixins (миксины с расширением классов) End */
+
 body {
-  font-family: "PTRootUIWebVF";
+  font-family: "root-ui_vf";
 }
 
 ._btn {

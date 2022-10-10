@@ -1,29 +1,44 @@
 @font-face {
-	font-family: 'PTRootUIWebVF';
+	font-family: 'root-ui_vf';
 	src: url("../fonts/PT-Root-UI_VF.woff2") format("woff2-variations"), url("../fonts/PT-Root-UI_VF.woff") format("woff-variations");
     font-weight: 400 700;
     font-style: normal;
 }
 
-// @include font_pt-root-vf(21,fw,lh,0.02);
+/* Extension mixins (миксины с расширением классов) START*/
 
-@mixin font_pt-root-vf ($font-size: fs, $font-weight: fw, $line-height: lh, $letter-spacing: ls) {
+/* Миксин шрифта START */
 
-    @if $font-size != 'fs' {
-        font-size: $font-size * 1px;
-    }
+@mixin _font-ext ($font-name: null, $font-size: null, $font-weight: null, $line-height: null, $letter-spacing: null, $font-color: null) {
 
-    @if $font-weight != 'fw' {
-        font-weight: $font-weight;
-    }
+    @if $font-name != 'fn' {font-family: $font-name;}
 
-    @if $line-height != 'lh'{
-        line-height: $line-height * 1px;
-    }
+    @if $font-size != 'fs' {font-size: $font-size * 1px;}
 
-    @if $letter-spacing != 'ls'{
-        letter-spacing: $letter-spacing * 1em;
-    }
+    @if $font-weight != 'fw' {font-weight: $font-weight;}
+
+    @if $line-height != 'lh'{line-height: $line-height * 1px;}
+
+    @if $letter-spacing != 'ls'{letter-spacing: $letter-spacing * 1em;}
+
+    @if $font-color != 'fc'{color: $font-color;}
 }
+
+/* Подключение
+
+@include _font-ext(fn, fs, fw, lh, ls, fc);
+
+! Без единиц измерения
+
+fn - font-family (font-name) - название шрифта
+fs - font-size   - размер шрифта
+fw - font-weight - начертание шрифта
+lh - line-height - межстрочный отступ
+ls - letter-spacing - межбуквенный отступ
+fc - color - цвет текста */
+
+/* Миксин шрифта END */
+
+/* Extension mixins (миксины с расширением классов) End */
 
 

@@ -1,12 +1,8 @@
-@import 'base/module';
-@import 'components/module';
-@import 'layout/module';
-@import 'pages/module';
-@import 'themes/module';
-@import 'vendors/module';
+@import "base/_normalize";
+@import "base/_typography";
 
 body {
-    font-family: 'PTRootUIWebVF';
+    font-family: 'root-ui_vf';
 }
 
 ._btn {
