@@ -21,35 +21,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Компонент "Верхний лейбл" (скидка, акция, доставка) START */
-.product-card__label {
-    display: inline-block;
-    width: fit-content;
-    padding: 3px 8px;
-    margin-bottom: 8px;
-    border: 1px solid #CCCCCC;
-    border-radius: 2px;
-    color: #444444;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 22px;
-    letter-spacing: 0.024em;
-    cursor: pointer;
-    transition: .3s;
-}
-
-.product-card__label:hover {
-    border-color: transparent;
-    background: #FFD300;
-    color: #444444;
-}
-
-.product-card__label:active {
-    background: linear-gradient(0deg, #FFE71E, #FFE71E), #FFD300;
-    color: #222222;
-}
-/* Компонент "Верхний лейбл" (скидка, акция, доставка) END */
-
 .product-card__top {
     position: relative;
     height: 380px;

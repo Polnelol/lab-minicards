@@ -473,7 +473,45 @@ fc - color - цвет текста */
 Кнопка отложенных (сердечко) END 
 ================================ */
 
-/* Компонент "Tooltip" (всплывающая подсказка при наведении) START */
+/* ============================================
+"Верхний лейбл" (скидка, акция, доставка) START 
+=============================================== */
+
+.product-card__label {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 8px;
+  margin-bottom: 8px;
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+  color: #444444;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.024em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-card__label:hover {
+  border-color: transparent;
+  background: #FFD300;
+  color: #444444;
+}
+
+.product-card__label:active {
+  background: linear-gradient(0deg, #FFE71E, #FFE71E), #FFD300;
+  color: #222222;
+}
+
+/* ==========================================
+"Верхний лейбл" (скидка, акция, доставка) END 
+============================================= */
+
+/* ============================================================
+Компонент "Tooltip" (всплывающая подсказка при наведении) START 
+=============================================================== */
 
 .tooltip {
   position: relative;
@@ -510,7 +548,9 @@ fc - color - цвет текста */
   transition: 0.3s;
 }
 
-/* Компонент "Tooltip" (всплывающая подсказка при наведении) END */
+/* ==========================================================
+Компонент "Tooltip" (всплывающая подсказка при наведении) END 
+============================================================= */
 
 body {
   font-family: "root-ui_vf";
@@ -528,38 +568,6 @@ body {
   margin-bottom: 24px;
   box-sizing: border-box;
 }
-
-/* Компонент "Верхний лейбл" (скидка, акция, доставка) START */
-
-.product-card__label {
-  display: inline-block;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 3px 8px;
-  margin-bottom: 8px;
-  border: 1px solid #CCCCCC;
-  border-radius: 2px;
-  color: #444444;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 22px;
-  letter-spacing: 0.024em;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.product-card__label:hover {
-  border-color: transparent;
-  background: #FFD300;
-  color: #444444;
-}
-
-.product-card__label:active {
-  background: linear-gradient(0deg, #FFE71E, #FFE71E), #FFD300;
-  color: #222222;
-}
-
-/* Компонент "Верхний лейбл" (скидка, акция, доставка) END */
 
 .product-card__top {
   position: relative;
