@@ -4,15 +4,15 @@
 .tooltip {
     position: relative;
     overflow: hidden;
-}
 
-.tooltip:hover {
-    overflow: visible;
-}
+    &:hover {
+        overflow: visible;
 
-.tooltip:hover .tooltip__content {
-    opacity: 1;
-    visibility: visible;
+        .tooltip__content {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
 
 .tooltip__content {

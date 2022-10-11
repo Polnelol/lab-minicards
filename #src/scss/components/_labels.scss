@@ -12,17 +12,17 @@
     transition: .3s;
 
     @include _font-ext(fn, 17, 22, 560, .024, #444444);
-}
 
-.product-card__label:hover {
-    border-color: transparent;
-    background: #FFD300;
-    color: #444444;
-}
+    &:hover {
+        border-color: transparent;
+        background: #FFD300;
+        color: #444444;
+    }
 
-.product-card__label:active {
-    background: linear-gradient(0deg, #FFE71E, #FFE71E), #FFD300;
-    color: #222222;
+    &:active {
+        background: linear-gradient(0deg, #FFE71E, #FFE71E), #FFD300;
+        color: #222222;
+    }
 }
 /* ==========================================
 "Верхний лейбл" (скидка, акция, доставка) END 
