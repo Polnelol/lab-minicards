@@ -23,13 +23,13 @@
     border-radius: 8px;
     
     @include _font-ext(fn, 20, lh, 560, .02, #595959);
-}
 
-/* состояние active - Товар добавлен в корзину */
-.btn-tocart.active {
-    background: #0650C2;
-    color: #FFFFFF;
-    border: none;
+    /* состояние active - Товар добавлен в корзину */
+    &.active {
+        background: #0650C2;
+        color: #FFFFFF;
+        border: none;
+    }
 }
 /* ==========================================
 Кнопка мини товарной карточки "В корзину" END 
@@ -44,12 +44,12 @@
     width: 27px;
     height: 24px;
     background: url("../img/like-default.svg") no-repeat center;
-}
 
-.btn-like.active {
-    width: 27px;
-    height: 24px;
-    background: url("../img/like-active.svg") no-repeat center;
+    &.active {
+        width: 27px;
+        height: 24px;
+        background: url("../img/like-active.svg") no-repeat center;
+    }
 }
 /* =============================
 Кнопка отложенных (сердечко) END 

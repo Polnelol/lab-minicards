@@ -442,9 +442,8 @@ Extension mixins (миксины с расширением классов) END
   font-weight: 560;
   letter-spacing: 0.02em;
   color: #595959;
+  /* состояние active - Товар добавлен в корзину */
 }
-
-/* состояние active - Товар добавлен в корзину */
 
 .btn-tocart.active {
   background: #0650C2;
@@ -643,7 +642,7 @@ body {
   color: #595959;
 }
 
-.product-card__old-price-val::after {
+.product-card__old-price-val:after {
   content: "";
   position: absolute;
   left: 0;
