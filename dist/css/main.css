@@ -500,9 +500,7 @@ template {
 Кнопка отложенных (сердечко) END 
 ================================ */
 
-/* ============================================
-"Верхний лейбл" (скидка, акция, доставка) START 
-=============================================== */
+/* ===== "Верхний лейбл" (скидка, акция, доставка) START ===== */
 
 .product-card__label {
   display: inline-block;
@@ -532,9 +530,39 @@ template {
   color: #222222;
 }
 
-/* ==========================================
-"Верхний лейбл" (скидка, акция, доставка) END 
-============================================= */
+/* ===== "Верхний лейбл" (скидка, акция, доставка) END ===== */
+
+/* ===== "Нижний лейбл" (В наличии в ПВЗ + иконка Л-поста) START ===== */
+
+.label-lpost {
+  display: flex;
+  align-items: center;
+}
+
+.label-lpost__img {
+  margin-right: 7.5px;
+}
+
+.label-lpost__title {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 560;
+  letter-spacing: 0.024em;
+  color: #666666;
+}
+
+.label-purchase {
+  display: inline-block;
+  padding: 0 4px;
+  background: #E8E8E8;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 560;
+  letter-spacing: 0.024em;
+  color: #666666;
+}
+
+/* ===== "Нижний лейбл" (В наличии в ПВЗ + иконка Л-поста) END ===== */
 
 /* ============================================================
 Компонент "Tooltip" (всплывающая подсказка при наведении) START 
@@ -828,34 +856,6 @@ body {
 
 .product-card__about-container {
   margin-top: 10px;
-}
-
-.label-lpost {
-  display: flex;
-  align-items: center;
-}
-
-.label-lpost__img {
-  margin-right: 7.5px;
-}
-
-.label-lpost__title {
-  font-size: 17px;
-  line-height: 22px;
-  font-weight: 560;
-  letter-spacing: 0.024em;
-  color: #666666;
-}
-
-.label-purchase {
-  display: inline-block;
-  padding: 0 4px;
-  background: #E8E8E8;
-  font-size: 17px;
-  line-height: 22px;
-  font-weight: 560;
-  letter-spacing: 0.024em;
-  color: #666666;
 }
 
 @media (max-width: 1600px) {

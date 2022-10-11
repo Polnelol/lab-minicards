@@ -177,27 +177,6 @@ body {
     margin-top: 10px;
 }
 
-.label-lpost {
-    display: flex;
-    align-items: center;
-}
-
-.label-lpost__img {
-    margin-right: 7.5px;
-}
-
-.label-lpost__title {
-    @include _font-ext(fn, 17, 22, 560, .024, #666666);
-}
-
-.label-purchase {
-    display: inline-block;
-    padding: 0 4px;
-    background: #E8E8E8;
-    
-    @include _font-ext(fn, 17, 22, 560, .024, #666666);
-}
-
 @media (max-width: 1600px) {
     .search-tab {
         padding: 24px 45px 90px 45px;
