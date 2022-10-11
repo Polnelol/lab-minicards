@@ -1,7 +1,10 @@
-@import "abstracts/_abstracts-module";
-@import "base/_base-module";
-@import "components/_components-module";
-@import "layout/_layout-module";
+@import 'abstracts/_abstracts-module';
+@import 'base/_base-module';
+@import 'components/_components-module.scss';
+@import 'layout/_layout-module.scss';
+@import 'pages/_pages-module.scss';
+@import 'themes/_themes-module';
+@import 'vendors/_vendors-module.scss';
 
 
 body {
