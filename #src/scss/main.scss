@@ -110,8 +110,21 @@ body {
 
 .product-card__name {
     margin: 8px 0;
+    transition: .3s; 
 
-    @include _font-ext(fn, 17, 20, 560, .005, fc);
+    @include _font-ext(fn, 17, 20, 560, .005, #000000);
+
+    &:hover {
+         color: #C9112A;
+    }
+
+    &:active {
+        color: #FAA700;
+    }
+
+    &:visited {
+        color: #000000;
+    }
 }
 
 .product-card__author {

@@ -691,10 +691,24 @@ body {
 
 .product-card__name {
   margin: 8px 0;
+  transition: 0.3s;
   font-size: 17px;
   line-height: 20px;
   font-weight: 560;
   letter-spacing: 0.005em;
+  color: #000000;
+}
+
+.product-card__name:hover {
+  color: #C9112A;
+}
+
+.product-card__name:active {
+  color: #FAA700;
+}
+
+.product-card__name:visited {
+  color: #000000;
 }
 
 .product-card__author {
