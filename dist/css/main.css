@@ -381,8 +381,12 @@ template {
   display: none;
 }
 
+/* ===================== Переменные шрифтов START ======================== */
+
+/* =================== Переменные шрифтов END ====================== */
+
 @font-face {
-  font-family: "root-ui_vf";
+  font-family: root-ui_vf, system-ui, sans-serif;
   src: url("../fonts/PT-Root-UI_VF.woff2") format("woff2-variations"), url("../fonts/PT-Root-UI_VF.woff") format("woff-variations");
   font-weight: 400 700;
   font-style: normal;
@@ -556,7 +560,7 @@ Extension mixins (миксины с расширением классов) END
 ============================================================= */
 
 body {
-  font-family: "root-ui_vf";
+  font-family: root-ui_vf, system-ui, sans-serif;
 }
 
 .search-tab {

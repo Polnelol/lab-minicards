@@ -1,5 +1,9 @@
+/* ===================== Переменные шрифтов START ======================== */
+$root-ui_vf: root-ui_vf, system-ui, sans-serif;
+/* =================== Переменные шрифтов END ====================== */
+
 @font-face {
-	font-family: 'root-ui_vf';
+	font-family: $root-ui_vf;
 	src: url("../fonts/PT-Root-UI_VF.woff2") format("woff2-variations"), url("../fonts/PT-Root-UI_VF.woff") format("woff-variations");
     font-weight: 400 700;
     font-style: normal;
