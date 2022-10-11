@@ -1,6 +1,5 @@
 @import "base/_base-module";
 @import "components/_components-module";
-@import "components/tooltip";
 @import "layout/_layout-module";
 
 
@@ -44,7 +43,7 @@ body {
 
 .product-card__discount {
     position: absolute;
-    right: 5px;
+    right: 8px;
     bottom: 20px;
     width: 60px;
     height: 29px;
@@ -54,7 +53,7 @@ body {
     border-radius: 3px 0px 0px 3px;
     text-align: center;
     cursor: pointer;
-    transition: .3s;
+    transition: .3s; 
 
     @include _font-ext(fn, 17, 29, 700, .02, #FFFFFF);
 }
