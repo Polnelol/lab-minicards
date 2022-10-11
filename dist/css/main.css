@@ -1,5 +1,47 @@
 @charset "UTF-8";
 
+/* ===================== Переменные шрифтов START ======================== */
+
+/* =================== Переменные шрифтов END ====================== */
+
+/* ===================================================
+Extension mixins (миксины с расширением классов) START 
+====================================================== */
+
+/* ================ Миксин шрифта START =================== */
+
+/* Подключение
+
+@include _font-ext(fn, fs, lh, fw, ls, fc);
+
+! Без единиц измерения
+
+fn - font-family (font-name) - название шрифта
+fs - font-size               - размер шрифта
+lh - line-height             - межстрочный отступ
+fw - font-weight             - начертание шрифта
+ls - letter-spacing          - межбуквенный отступ
+fc - color                   - цвет текста */
+
+/* ============== Миксин шрифта END ================= */
+
+/* ================ Миксин интерактивных состояний взаимодействия START =================== */
+
+/* Подключение
+
+@include _link-interaction-ext();
+
+Не принимает никаких значений.
+
+Имеет стили 3 состояний - :hover, :active, :visited;
+
+Значения всех состояний зашиты в миксин и имеют постоянные значения
+/* ================ Миксин интерактивных состояний взаимодействия END =================== */
+
+/* =================================================
+Extension mixins (миксины с расширением классов) END 
+==================================================== */
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -393,35 +435,6 @@ template {
 
 /* ==================== Подключение шрифтов END ======================= */
 
-/* ===================== Переменные шрифтов START ======================== */
-
-/* =================== Переменные шрифтов END ====================== */
-
-/* ===================================================
-Extension mixins (миксины с расширением классов) START 
-====================================================== */
-
-/* ================ Миксин шрифта START =================== */
-
-/* Подключение
-
-@include _font-ext(fn, fs, lh, fw, ls, fc);
-
-! Без единиц измерения
-
-fn - font-family (font-name) - название шрифта
-fs - font-size               - размер шрифта
-lh - line-height             - межстрочный отступ
-fw - font-weight             - начертание шрифта
-ls - letter-spacing          - межбуквенный отступ
-fc - color                   - цвет текста */
-
-/* ============== Миксин шрифта END ================= */
-
-/* =================================================
-Extension mixins (миксины с расширением классов) END 
-==================================================== */
-
 /* =============================================================
 Стили кнопок для технического класса, обнуление/добавление START 
 ================================================================ */
@@ -690,6 +703,8 @@ body {
 }
 
 .product-card__name {
+  outline: 3px solid blue;
+  display: block;
   margin: 8px 0;
   transition: 0.3s;
   font-size: 17px;
@@ -711,21 +726,65 @@ body {
   color: #000000;
 }
 
+.product-card__name:focus-visible {
+  color: #000000;
+}
+
 .product-card__author {
+  display: block;
   margin: 8px 0;
+  cursor: pointer;
+  transition: 0.3s;
   font-size: 15px;
   line-height: 20px;
   font-weight: 440;
   letter-spacing: 0.005em;
+  color: #000000;
+}
+
+.product-card__author:hover {
+  color: #C9112A;
+}
+
+.product-card__author:active {
+  color: #FAA700;
+}
+
+.product-card__author:visited {
+  color: #000000;
+}
+
+.product-card__author:focus-visible {
+  color: #000000;
 }
 
 .product-card__info {
   margin: 8px 0;
+}
+
+.product-card__info-item {
+  transition: 0.3s;
   font-size: 15px;
   line-height: 20px;
   font-weight: 440;
   letter-spacing: 0.005em;
   color: #595959;
+}
+
+.product-card__info-item:hover {
+  color: #C9112A;
+}
+
+.product-card__info-item:active {
+  color: #FAA700;
+}
+
+.product-card__info-item:visited {
+  color: #000000;
+}
+
+.product-card__info-item:focus-visible {
+  color: #000000;
 }
 
 .product-card__rating-container {
