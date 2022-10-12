@@ -17,7 +17,7 @@ Sass (Scss)
 @import 'themes/_themes-module';
 @import 'vendors/_vendors-module.scss';
 
-За основу организации архитектуры файлов стилей берем паттерн 7-1.
+За основу организации архитектуры файлов стилей берем паттерн 7-1 https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/7-1-sass-architecture
 
 В этом паттерне применяются 7 каталогов и один файл main.scss на выходе:
 
