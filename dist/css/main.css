@@ -478,6 +478,12 @@ Extension mixins (миксины с расширением классов) END
   border: none;
 }
 
+.btn-tocart:active {
+  color: #FFFFFF;
+  background: linear-gradient(180deg, rgba(255, 135, 0, 0) 0%, #FF4800 100%), linear-gradient(0deg, #FF2600, #FF2600), #FFFFFF;
+  border: none;
+}
+
 .btn-tocart.active {
   background: #0650C2;
   color: #FFFFFF;

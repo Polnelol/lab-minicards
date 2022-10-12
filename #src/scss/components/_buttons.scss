@@ -27,6 +27,12 @@
         border: none;
     }
 
+    &:active {
+        color: $white;
+        background: linear-gradient(180deg, rgba(255, 135, 0, 0) 0%, $red-dit 100%), linear-gradient(0deg, $maraschino, $maraschino), $white;
+        border: none;
+    }
+
     /* состояние active - Товар добавлен в корзину */
     &.active {
         background: $london-rain;
