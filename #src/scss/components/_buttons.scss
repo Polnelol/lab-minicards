@@ -10,13 +10,13 @@
 
 /* ===== Кнопка товарной карточки "В корзину" START ===== */
 .btn-tocart {
-    width: 138px;
+    width: 137px;
     height: 44px;
     text-align: center;
     align-items: center;
     border: 1px solid $unique-grey;
     border-radius: 8px;
-    transition: 0.3s;
+    transition: .3s;
     
     @include _font-ext(fn, 20, 44, 560, .02, $shadow-mountain);
 
@@ -24,13 +24,11 @@
         border: 1px solid $white;
         color: $white;
         background: linear-gradient(180deg, rgba(255, 135, 0, 0) 0%, $mandarin-jelly 100%), linear-gradient(0deg, $red-dit, $red-dit), $white;
-        border: none;
     }
 
     &:active {
         color: $white;
         background: linear-gradient(180deg, rgba(255, 135, 0, 0) 0%, $red-dit 100%), linear-gradient(0deg, $maraschino, $maraschino), $white;
-        border: none;
     }
 
     /* состояние active - Товар добавлен в корзину */

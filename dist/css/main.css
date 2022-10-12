@@ -456,7 +456,7 @@ Extension mixins (миксины с расширением классов) END
 /* ===== Кнопка товарной карточки "В корзину" START ===== */
 
 .btn-tocart {
-  width: 138px;
+  width: 137px;
   height: 44px;
   text-align: center;
   align-items: center;
@@ -475,13 +475,11 @@ Extension mixins (миксины с расширением классов) END
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
   background: linear-gradient(180deg, rgba(255, 135, 0, 0) 0%, #FF8700 100%), linear-gradient(0deg, #FF4800, #FF4800), #FFFFFF;
-  border: none;
 }
 
 .btn-tocart:active {
   color: #FFFFFF;
   background: linear-gradient(180deg, rgba(255, 135, 0, 0) 0%, #FF4800 100%), linear-gradient(0deg, #FF2600, #FF2600), #FFFFFF;
-  border: none;
 }
 
 .btn-tocart.active {
