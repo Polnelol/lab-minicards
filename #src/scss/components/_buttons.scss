@@ -13,15 +13,15 @@
     display: flex;
     align-items: center;
     padding: 12px 20px;
-    border: 1px solid #C9C9C9;
+    border: 1px solid $unique-grey;
     border-radius: 8px;
     
-    @include _font-ext(fn, 20, lh, 560, .02, #595959);
+    @include _font-ext(fn, 20, lh, 560, .02, $shadow-mountain);
 
     /* состояние active - Товар добавлен в корзину */
     &.active {
-        background: #0650C2;
-        color: #FFFFFF;
+        background: $london-rain;
+        color: $white;
         border: none;
     }
 }

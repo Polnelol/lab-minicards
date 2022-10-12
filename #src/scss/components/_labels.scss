@@ -4,22 +4,22 @@
     width: fit-content;
     padding: 3px 8px;
     margin-bottom: 8px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid $cerebral-grey;
     border-radius: 2px;
     cursor: pointer;
     transition: .3s;
 
-    @include _font-ext(fn, 17, 22, 560, .024, #444444);
+    @include _font-ext(fn, 17, 22, 560, .024, $goshawk-grey);
 
     &:hover {
         border-color: transparent;
-        background: #FFD300;
-        color: #444444;
+        background: $yellow-tang;
+        color: $goshawk-grey;
     }
 
     &:active {
-        background: linear-gradient(0deg, #FFE71E, #FFE71E), #FFD300;
-        color: #222222;
+        background: linear-gradient(0deg, $big-yellow-streak, $big-yellow-streak), $yellow-tang;
+        color: $black-out;
     }
 }
 /* ===== "Верхний лейбл" (скидка, акция, доставка) END ===== */
@@ -36,14 +36,14 @@
 }
 
 .label-lpost__title {
-    @include _font-ext(fn, 17, 22, 560, .024, #666666);
+    @include _font-ext(fn, 17, 22, 560, .024, $squant);
 }
 
 .label-purchase {
     display: inline-block;
     padding: 0 4px;
-    background: #E8E8E8;
+    background: $unicorn-silver;
     
-    @include _font-ext(fn, 17, 22, 560, .024, #666666);
+    @include _font-ext(fn, 17, 22, 560, .024, $squant);
 }
 /* ===== "Нижний лейбл" (В наличии в ПВЗ + иконка Л-поста) END ===== */

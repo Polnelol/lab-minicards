@@ -28,6 +28,6 @@
     z-index: 9;
     transition: .3s;
 
-    @include _font-ext (fn, 15, lh, 440, .02, #FFFFFF);
+    @include _font-ext (fn, 15, lh, 440, .02, $white);
 }
 /* ===== Компонент "Tooltip" (всплывающая подсказка при наведении) END ===== */
