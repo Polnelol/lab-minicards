@@ -36,6 +36,8 @@ fc - color                   - цвет текста */
 @mixin _link-interaction-ext() {
     &:hover {
         color: #C9112A;
+        background: none;
+        text-decoration: underline;
     }
 
     &:active {
