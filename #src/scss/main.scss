@@ -1,4 +1,4 @@
-/* ======= Подключение основных модулей паттернов START ======= */
+/* ===== Подключение основных модулей паттернов START ===== */
 @import 'base/_base-module';
 @import 'abstracts/_abstracts-module';
 @import 'components/_components-module.scss';
@@ -6,7 +6,7 @@
 @import 'pages/_pages-module.scss';
 @import 'themes/_themes-module';
 @import 'vendors/_vendors-module.scss';
-/* ======= Подключение основных модулей паттернов END ======= */
+/* ===== Подключение основных модулей паттернов END ===== */
 
 body {
     font-family: $root-ui_vf;

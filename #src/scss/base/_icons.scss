@@ -1,0 +1,13 @@
+/* ===== Подключение svg иконок START ===== */
+
+/* Подключение
+
+В свг коде иконки, в зависимости от нужд, меняем значение fill, stroke или все сразу на %%COLOR%% 
+Нейминг должен быть семантичным и понятным, без цифр и абстракций */
+
+$icons: (
+	'like-default': '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24" fill="%%COLOR%%"><path d="M13.0507 3.53165L13.8333 4.51535L14.6158 3.53165C15.8965 1.92189 17.8621 1 19.8333 1C23.5435 1 26.3333 3.74645 26.3333 7.27273C26.3333 10.2412 24.4806 13.3416 21.8037 16.212C19.3394 18.8545 16.3089 21.161 13.8333 22.8045C11.3576 21.161 8.32709 18.8545 5.86276 16.212C3.18595 13.3416 1.33325 10.2412 1.33325 7.27273C1.33325 3.74645 4.12304 1 7.83325 1C9.80436 1 11.7701 1.92189 13.0507 3.53165Z" stroke="%%COLOR-STROKE%%" stroke-width="2"/></svg>',
+	'external': '<svg xmlns="http://www.w3.org/2000/svg" width="31.408" height="33.919" viewBox="0 0 31.408 33.919"><g transform="translate(-1008.919 -965.628)"><g transform="translate(1046.174 2398.574) rotate(-135)"><path d="M0,0,7.879,7.879,0,15.759" transform="translate(1025.259 990.17) rotate(90)" fill="none" stroke="%%COLOR%%" stroke-width="3"/><line y2="16.032" transform="translate(1017.516 980.5)" fill="none" stroke="%%COLOR%%" stroke-width="3"/></g><path d="M10683.643,5322.808v10.24h-20.386v-21.215h7.446" transform="translate(-9652.838 -4335)" fill="none" stroke="%%COLOR%%" stroke-width="3"/></g></svg>',
+	'caret-right': '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.129 34.016"><path d="M1454.5,1298.922l15.947,15.947-15.947,15.947" transform="translate(-1453.439 -1297.861)" fill="none" stroke="%%COLOR%%" stroke-width="3"/></svg>',
+);
+/* ===== Подключение svg иконок END ===== */

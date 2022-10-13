@@ -48,22 +48,21 @@
 }
 /* ===== Кнопка товарной карточки "В корзину" END ===== */
 
-
 /* ===== Кнопка отложенных (сердечко) START ===== */
 .btn-like {
     border: none;
     width: 27px;
     height: 24px;
-    background: url("../img/like-default.svg") no-repeat center;
+    background: get-icon('like-default', orange);
 
     &.active {
         width: 27px;
         height: 24px;
-        background: url("../img/like-active.svg") no-repeat center;
+        background: get-icon('like-default', transparent);
     }
 
     &:hover {
-        background: url("../img/like-active.svg") no-repeat center;
+        background: get-icon('like-default', $super-rose-red);
     }
 }
 /* ===== Кнопка отложенных (сердечко) END ===== */
