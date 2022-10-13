@@ -462,7 +462,6 @@ Extension mixins (миксины с расширением классов) END
   align-items: center;
   border: 1px solid #C9C9C9;
   border-radius: 8px;
-  transition: 0.3s;
   font-size: 20px;
   line-height: 44px;
   font-weight: 560;
@@ -486,6 +485,14 @@ Extension mixins (миксины с расширением классов) END
   background: #0650C2;
   color: #FFFFFF;
   border: none;
+}
+
+.btn-tocart.active:hover {
+  background: linear-gradient(180deg, rgba(20, 124, 229, 0) 0%, #147CE5 100%), #0650C2;
+}
+
+.btn-tocart.active:active {
+  background: linear-gradient(180deg, #0127AE 0%, #0650C2 100%), #0650C2;
 }
 
 /* ===== Кнопка товарной карточки "В корзину" END ===== */

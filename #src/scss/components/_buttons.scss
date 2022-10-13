@@ -16,7 +16,6 @@
     align-items: center;
     border: 1px solid $unique-grey;
     border-radius: 8px;
-    transition: .3s;
     
     @include _font-ext(fn, 20, 44, 560, .02, $shadow-mountain);
 
@@ -36,6 +35,14 @@
         background: $london-rain;
         color: $white;
         border: none;
+
+        &:hover {
+            background: linear-gradient(180deg, rgba(20, 124, 229, 0) 0%, #147CE5 100%), #0650C2;
+        }
+
+        &:active {
+            background: linear-gradient(180deg, #0127AE 0%, #0650C2 100%), #0650C2;
+        }
     }
 }
 /* ===== Кнопка товарной карточки "В корзину" END ===== */
