@@ -37,11 +37,11 @@
         border: none;
 
         &:hover {
-            background: linear-gradient(180deg, rgba(20, 124, 229, 0) 0%, #147CE5 100%), #0650C2;
+            background: linear-gradient(180deg, rgba(20, 124, 229, 0) 0%, $bright-navy-blue 100%), $london-rain;
         }
 
         &:active {
-            background: linear-gradient(180deg, #0127AE 0%, #0650C2 100%), #0650C2;
+            background: linear-gradient(180deg, $city-hunter-blue 0%, $london-rain 100%), $london-rain;
         }
     }
 }
