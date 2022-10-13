@@ -4,6 +4,7 @@
     outline: none;
     padding: 0;
     cursor: pointer;
+    transition: .2s;
 }
 /* ===== Стили кнопок для технического класса, обнуление/добавление END ===== */
 
@@ -58,6 +59,10 @@
     &.active {
         width: 27px;
         height: 24px;
+        background: url("../img/like-active.svg") no-repeat center;
+    }
+
+    &:hover {
         background: url("../img/like-active.svg") no-repeat center;
     }
 }

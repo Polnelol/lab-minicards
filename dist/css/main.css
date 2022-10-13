@@ -449,6 +449,7 @@ Extension mixins (миксины с расширением классов) END
   outline: none;
   padding: 0;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 /* ===== Стили кнопок для технического класса, обнуление/добавление END ===== */
@@ -509,6 +510,10 @@ Extension mixins (миксины с расширением классов) END
 .btn-like.active {
   width: 27px;
   height: 24px;
+  background: url("../img/like-active.svg") no-repeat center;
+}
+
+.btn-like:hover {
   background: url("../img/like-active.svg") no-repeat center;
 }
 
