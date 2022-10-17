@@ -53,7 +53,7 @@
     border: none;
     width: 27px;
     height: 24px;
-    background: get-icon('like-default', orange);
+    background: get-icon('like-default', transparent);
 
     &.active {
         width: 27px;
