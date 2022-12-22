@@ -653,6 +653,9 @@ background: get-icon('svg_name', background_color);
 /* ===== Подключение основных модулей паттернов END ===== */
 
 body {
+  margin: 0 auto;
+  font-size: 62.5%;
+  height: 100%;
   font-family: root-ui_vf, system-ui, sans-serif;
 }
 
@@ -660,6 +663,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 24px 65px 90px 65px;
+  margin-top: 50px;
 }
 
 .prodcut-card {
@@ -669,26 +673,20 @@ body {
   box-sizing: border-box;
 }
 
-.product-card__top {
+.product-card__img {
   position: relative;
-  height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-
-.product-card__img {
-  position: relative;
   width: -moz-fit-content;
   width: fit-content;
+  height: 330px;
   max-width: 246px;
-  display: flex;
   margin-bottom: 12px;
 }
 
 .product-card__img img {
-  width: auto;
-  max-width: 100%;
+  vertical-align: bottom;
 }
 
 .product-card__discount {
@@ -874,6 +872,7 @@ body {
 
 .product-card__rating-content {
   display: flex;
+  align-items: center;
 }
 
 .product-card__rating-value {
@@ -886,6 +885,8 @@ body {
 }
 
 .product-card__rating-img {
+  width: 17px;
+  height: 17px;
   margin-right: 8px;
 }
 
@@ -907,40 +908,165 @@ body {
   margin-top: 10px;
 }
 
-@media (max-width: 1600px) {
-  .search-tab {
-    padding: 24px 45px 90px 45px;
+.search {
+  position: relative;
+}
+
+.search:before {
+  content: "1920px - 1536px";
+  position: fixed;
+  font-size: 28px;
+  background-color: #21232C;
+  color: #fff;
+  opacity: 0.8;
+  padding: 5px 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+._container {
+  outline: 3px solid red;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.search__result {
+  outline: 2px solid green;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mini-card {
+  outline: 2px solid blue;
+  width: 18.889%;
+  margin-right: 20px;
+  font-size: 36px;
+  text-align: center;
+  line-height: 534px;
+  margin-bottom: 55px;
+}
+
+.mini-card:nth-child(5n) {
+  margin-right: 0;
+}
+
+@media (max-width: 320px) {
+  ._container {
+    width: 1440px;
+  }
+
+  .search:before {
+    content: "480px - 320px";
+    background-color: #1EA966;
   }
 }
 
-@media (max-width: 1536px) {
-  .prodcut-card {
-    width: 20%;
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  ._container {
+    width: 1440px;
+  }
+
+  .search:before {
+    content: "480px - 320px";
+    background-color: #1EA966;
   }
 }
 
-@media (max-width: 1440px) {
-  .search-tab {
-    padding: 24px 53px 90px 53px;
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  ._container {
+    width: 90%;
+  }
+
+  .search:before {
+    content: "768px - 480px";
+    background-color: #2C9DCE;
+  }
+
+  .mini-card {
+    width: 31.71%;
+    margin-right: 15px;
+  }
+
+  .mini-card:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .mini-card:nth-child(4n) {
+    margin-right: 15px;
+  }
+
+  .mini-card:nth-child(5n) {
+    margin-right: 15px;
   }
 }
 
-@media (max-width: 1280px) {
-  .search-tab {
-    padding: 24px 45px 90px 45px;
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  ._container {
+    width: 680px;
   }
 
-  .prodcut-card {
-    width: 25%;
+  .search:before {
+    content: "1024px - 768px";
+    background-color: #AE8F13;
+  }
+
+  .mini-card {
+    margin-right: 15px;
+    width: 31.8635%;
+  }
+
+  .mini-card:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .mini-card:nth-child(4n) {
+    margin-right: 15px;
+  }
+
+  .mini-card:nth-child(5n) {
+    margin-right: 15px;
   }
 }
 
-@media (max-width: 1024px) {
-  .search-tab {
-    padding: 24px 20px 90px 20px;
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  ._container {
+    width: 980px;
   }
 
-  .prodcut-card {
-    width: 33.333333%;
+  .search:before {
+    content: "1280px - 1024px";
+    background-color: #C6394A;
+  }
+
+  .mini-card {
+    margin-right: 15px;
+    width: 23.853%;
+    height: 380px;
+    line-height: 380px;
+  }
+
+  .mini-card:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .mini-card:nth-child(5n) {
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1536px) {
+  ._container {
+    width: 1200px;
+  }
+
+  .mini-card {
+    width: 18.667%;
+    height: 450px;
+    line-height: 450px;
+  }
+
+  .search:before {
+    content: "1536px - 1280px";
+    background-color: #5E00FF;
   }
 }
